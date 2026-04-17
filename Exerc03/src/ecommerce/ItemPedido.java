@@ -12,27 +12,25 @@ public class ItemPedido {
         this.precoUnitario = precoUnitario;
     }
 
-    public String getNomeProduto() {
-        return nomeProduto;
+    public double getSubtotal(){
+        return quantidade * precoUnitario;
     }
 
-    public void setNomeProduto(String nomeProduto) {
-        this.nomeProduto = nomeProduto;
+    public String getNomeProduto() {
+        return nomeProduto;
     }
 
     public int getQuantidade() {
         return quantidade;
     }
 
-    public void setQuantidade(int quantidade) {
-        this.quantidade = quantidade;
-    }
-
     public double getPrecoUnitario() {
         return precoUnitario;
     }
 
-    public void setPrecoUnitario(double precoUnitario) {
-        this.precoUnitario = precoUnitario;
+
+    @Override
+        public String toString(){
+        return String.format("%-20s %dx R$ %6.2f = R$ %.2f", nomeProduto, quantidade, precoUnitario, getSubtotal());
     }
 }
