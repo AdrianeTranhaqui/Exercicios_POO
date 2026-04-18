@@ -53,4 +53,17 @@ abstract sealed class Veiculo implements Fretavel, Tributavel permits Caminhao, 
                     "Valor de locação diária deve ser positivo. Recebido: " + valor);
         this.valorLocacaoDiaria = valor;
     }
+
+    public void setPrecoFipe(double preco) {
+        if (preco <= 0)
+            throw new IllegalArgumentException(
+                    "Preço FIPE deve ser positivo. Recebido: " + preco);
+        this.precoFipe = preco;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("[%s] %s | Ano: %d | Diária: R$ %.2f | FIPE: R$ %.2f",
+                placa, marca, anoFabricacao, valorLocacaoDiaria, precoFipe);
+    }
 }
