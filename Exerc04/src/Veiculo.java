@@ -6,7 +6,7 @@ abstract sealed class Veiculo implements Fretavel, Tributavel permits Caminhao, 
     protected int anoFabricacao;
     protected double precoFipe;
 
-    private static final int ANO_ATUAL = 2025;
+    private static final int ANO_ATUAL = 2026;
     private static final int LIMITE_ISENCAO_ANOS = 20;
 
     public Veiculo(String placa, String marca, double valorLocacaoDiaria, int anoFabricacao, double precoFipe) {
