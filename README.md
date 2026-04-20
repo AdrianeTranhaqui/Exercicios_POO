@@ -177,9 +177,9 @@ Implementa:
 
 Consolidar o aprendizado em Java através de uma progressão prática:
 
-* Lógica básica →
-* Orientação a Objetos →
-* Modelagem de sistemas →
+* Lógica básica 
+* Orientação a Objetos 
+* Modelagem de sistemas 
 * Herança, interfaces e exceções
 
 ---
